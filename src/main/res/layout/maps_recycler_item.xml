@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:elevation="4dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/stop_id"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="5dp"
+        android:text="Stop 1644"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/stop_due_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="55dp"
+        android:text="Due in: 28 mins"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/stop_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="25dp"
+        android:text="Route: 104"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/stop_from_to"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="From DCU towards Harristown"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/stop_name"
+        style="@android:style/Widget.Holo.Light.TextView"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Collins Avenue Exte"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="24sp" />
+
+</FrameLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/detailLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:text=" "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_detail_text"
+        android:textSize="36sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/activity_detail_ingredient_header"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:text="Ingredients:" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_detail_image"
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="-20dp"
+            app:srcCompat="@drawable/ic_local_dining_black_24dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_detail_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/activity_detail_instructions"
+            android:layout_width="375dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="250dp"
+            android:maxLines="100"
+            android:scrollbars="vertical"
+            android:text=" "
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/activity_detail_vegetarian"
+            android:layout_width="29dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="212dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_vegetarian" />
+
+        <ImageView
+            android:id="@+id/activity_detail_gluten"
+            android:layout_width="29dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="212dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_gluten" />
+
+        <ImageView
+            android:id="@+id/activity_detail_dairy"
+            android:layout_width="29dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="212dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_dairy" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

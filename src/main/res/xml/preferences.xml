@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Account">
+        <EditTextPreference
+            android:title="First Name"
+            android:key="pref_key_user_firstname"/>
+        <EditTextPreference
+            android:title="Given Name"
+            android:key="pref_key_user_secondname" />
+        <EditTextPreference
+            android:title="Email Address"
+            android:summary="The email linked to your tPot account"
+            android:key="pref_key_user_email" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Calendars">
+        <PreferenceScreen
+            android:title="Calendars"
+            android:summary="Choose which calendars events to display">
+            <intent android:targetPackage="com.cpssd.organizr"
+                android:targetClass="com.cpssd.organizr.activity.CalendarSelectActivity">
+            </intent>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Cuisine">
+
+            <ListPreference  android:title="Diet"
+                android:summary="Select your dietary preferences"
+                android:key="diet"
+                android:defaultValue="0"
+                android:entries="@array/dietItems"
+                android:entryValues="@array/dietValues" />
+
+            <ListPreference  android:title="Intolerances"
+                android:summary="Select the kind of data that you would like to download"
+                android:key="intolerances"
+                android:defaultValue="0"
+                android:entries="@array/intoleranceItems"
+                android:entryValues="@array/intoleranceValues" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="College">
+        <EditTextPreference
+            android:title="College"
+            android:key="pref_key_user_college"
+            android:summary="College set on app startup">
+        </EditTextPreference>
+        <EditTextPreference
+            android:title="Course Code"
+            android:key="pref_key_user_course"
+            android:summary="Course set on app startup">
+        </EditTextPreference>
+        <EditTextPreference
+            android:title="Year"
+            android:key="pref_key_user_year"
+            android:summary="The year set on app startup">
+        </EditTextPreference>
+        <PreferenceScreen
+            android:title="Modules"
+            android:summary="Choose which modules to display">
+            <intent android:targetPackage="com.cpssd.organizr"
+                android:targetClass="com.cpssd.organizr.activity.ModuleSelectActivity">
+            </intent>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Societies">
+        <PreferenceScreen
+            android:title="Societies"
+            android:summary="Choose which modules to display">
+            <intent android:targetPackage="com.cpssd.organizr"
+                android:targetClass="com.cpssd.organizr.activity.SocietyPickerActivity">
+            </intent>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

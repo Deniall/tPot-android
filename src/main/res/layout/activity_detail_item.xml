@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="5dp"
+    android:elevation="0dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/activity_detail_ingredient_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:elevation="2dp"
+        android:text="Chicken Korma"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/activity_detail_ingredient_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_local_dining_black_24dp" />
+
+</FrameLayout>

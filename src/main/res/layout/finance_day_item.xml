@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="5dp"
+    android:elevation="0dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/finance_day_item_amount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="260dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="+ €2.50"
+        android:textAppearance="@android:style/TextAppearance.Material.DialogWindowTitle"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/finance_day_item_description"
+        android:layout_width="169dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:text="Grant payment"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+</FrameLayout>

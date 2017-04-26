@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/add_transaction_picker_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Expenditure"
+            android:textAppearance="@style/TextAppearance.StatusBar.EventContent"
+            android:textColor="@color/mdtp_circle_background_dark_theme"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/add_transaction_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:backgroundTintMode="multiply"
+            android:elevation="1dp"
+            android:text="Add an:"
+            android:textAppearance="@android:style/TextAppearance.Material.Display2"
+            android:textSize="40sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/transaction_date_picker_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Date:"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/add_expend_date_picker_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:elevation="3dp"
+            android:text="12/06/2017"
+            android:textAppearance="@android:style/TextAppearance.Material.Display1" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/transaction_amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Amount:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/transaction_amount_edittext"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="€2.00"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:singleLine="false" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/transaction_summary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Summary(Optional):"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/transaction_done_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical|center_horizontal"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+            android:elevation="1dp"
+            android:text="Done"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/transaction_summary_edittext"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="60dp"
+            android:elegantTextHeight="false"
+            android:ems="10"
+            android:hint="Bought a garlic cheese chip"
+            android:inputType="textMultiLine|textShortMessage"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </FrameLayout>
+
+</LinearLayout>

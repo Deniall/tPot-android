@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="@string/nav_events" />
+        <item
+            android:id="@+id/nav_finance"
+            android:icon="@drawable/ic_finance_black_24dp"
+            android:title="@string/nav_finance" />
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@drawable/ic_local_dining_black_24dp"
+            android:title="@string/nav_recipes" />
+
+        <item
+            android:id="@+id/nav_overview"
+            android:icon="@drawable/ic_view_day_black_24dp"
+            android:title="@string/nav_overview" />
+
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_map"
+            android:title="@string/nav_maps" />
+
+
+    </group>
+
+    <item android:title="@string/other">
+        <menu>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy"/>
+
+        </menu>
+    </item>
+
+</menu>

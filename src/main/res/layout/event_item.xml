@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:elevation="4dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/event_description"
+        android:layout_width="128dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="10dp"
+        android:alpha="11"
+        android:paddingTop="0dp"
+        android:text="Description"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/event_date"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="5dp"
+        android:text="Date"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/event_location"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="45dp"
+        android:text="Location"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="25dp"
+        android:text="Time"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/event_title"
+        style="@android:style/Widget.Holo.Light.TextView"
+        android:layout_width="137dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="10dp"
+        android:text="Title"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="24sp" />
+
+</FrameLayout>

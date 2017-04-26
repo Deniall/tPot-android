@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/overview_day_title"
+            style="@android:style/Widget.DeviceDefault.Light.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Saturday"
+            android:textSize="30sp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/overview_food_title"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:elevation="1dp"
+            android:text="FOOD" />
+
+        <TextView
+            android:id="@+id/overview_food_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="Add.." />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/overview_food_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="You have no recipes assigned to today! Click here to search."
+        android:textAppearance="@style/TextAppearance.Design.Error"
+        android:textColor="@color/primary_darker"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/overview_food_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:id="@+id/foodLoadingBar"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/overview_events_title"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:elevation="1dp"
+            android:text="EVENTS" />
+
+        <TextView
+            android:id="@+id/overview_events_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="Add.." />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/overview_events_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:enabled="true"
+        android:text="You have no events today! Click here to add one."
+        android:textAppearance="@style/TextAppearance.Design.Error"
+        android:textColor="@color/primary_darker"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/overview_events_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/eventLoadingBar"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/overview_finances_title"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:elevation="1dp"
+            android:text="FINANCES" />
+
+        <TextView
+            android:id="@+id/overview_finances_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="Add.." />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/overview_finances_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="5dp"
+        android:text="Current Day Balance:"
+        android:textSize="24sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/overview_finances_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/transactionLoadingBar"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-75dp"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</LinearLayout>

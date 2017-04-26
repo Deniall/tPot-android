@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cpssd.organizr.fragment.RecipesFragment">
+
+    <RelativeLayout
+        android:id="@+id/recipesLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipe_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/querybutton"
+        style="@android:style/Widget.Material.Button.Borderless.Small"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="5dp"
+        android:elevation="3dp"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/seachbar"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="230dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="7dp"
+        android:ems="10"
+        android:hint="Recipe Search.."
+        android:inputType="none|textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <ImageButton
+        android:id="@+id/fragment_recipes_filter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/common_full_open_on_phone"
+        android:contextClickable="true"
+        app:srcCompat="@drawable/ic_filter" />
+
+    <TextView
+        android:id="@+id/fragment_recipes_special_offers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:background="@color/mdtp_accent_color_focused"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:text="View special offers from local supermarkets"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="20sp" />
+
+</FrameLayout>

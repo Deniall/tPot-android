@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:gravity="center_vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="3dp"
+    android:elevation="0dp"
+    android:layout_height="60dp">
+
+    <TextView
+        android:text="Linear Algebra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overview_events_item_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="2dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Caption"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="11:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overview_events_item_time"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        android:layout_marginLeft="250dp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="XG22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overview_events_item_location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="13dp"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="5dp"
+        android:cropToPadding="true"
+        android:tintMode="add" />
+
+</FrameLayout>

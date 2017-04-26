@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <solar.blaz.date.week.WeekDatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/date_picker_text_colour"
+            android:textSize="18sp"
+            app:wdp_dayBackground="@drawable/date_picker_bg"
+            app:wdp_firstDayOfWeek="monday"
+            app:wdp_indicatorDrawable="@drawable/date_picker_indicator"
+            app:wdp_labelPadding="5dp"
+            app:wdp_labelTextSize="12sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/finance_day_expend_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Expenditure"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/finance_expenditure_add"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Add.." />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/expendloading"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/finance_day_expend_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/finance_income_add"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Add.." />
+
+        <TextView
+            android:id="@+id/finance_day_income_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Income"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/incomeLoading"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:gravity="center">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/finance_day_income_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/finances_day_balance_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Net Day Balance:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/finances_day_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:text="€2.00"
+            android:textAppearance="@android:style/TextAppearance.Material.Notification"
+            android:textColor="?attr/actionModeSplitBackground"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

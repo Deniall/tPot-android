@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="0.04"
+        android:text="Subscribed Societies"
+        android:textAppearance="@style/TextAppearance.Design.Tab"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/society_listview"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_weight="0.74"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/add_socs"
+        style="@android:style/Widget.Material.Light.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:text="Add Societies" />
+
+</LinearLayout>

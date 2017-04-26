@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/add_event_form_title"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:text="New event"
+        android:typeface="sans"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/new_event_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_dark"
+        android:hint="title"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/new_event_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary_dark"
+        android:hint="description"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:text="Date:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:textSize="24sp" />
+
+    <DatePicker
+        android:id="@+id/new_event_date"
+        android:layout_width="354dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_height="84dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:layout_weight="0.45"
+        android:layout_marginTop="-40dp">
+        </DatePicker>
+
+    <TextView
+        android:text="Time:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="24sp" />
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:id="@+id/new_event_time"
+        android:timePickerMode="spinner"
+        android:layout_marginTop="-30dp"
+        android:layout_height="103dp"
+        android:layout_weight="0.34" />
+
+    <Button
+        android:id="@+id/submit_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/primary_dark"
+        android:elevation="4dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="Create"
+        android:textColor="#fff" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+{
+  "project_info": {
+    "project_number": "264007239616",
+    "project_id": "firebase-studenthub"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264007239616:android:44824995eab1f64c",
+        "android_client_info": {
+          "package_name": "com.cpssd.organizr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264007239616-hhj3skmnsttvl3p69d0nnrg3eke8okq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cpssd.organizr",
+            "certificate_hash": "846f0bffb1ea1bf3c78b314953d82b1a782b8b0b"
+          }
+        },
+        {
+          "client_id": "264007239616-sidfl435ukbe6cfptqno14ecjmd1hsls.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "264007239616-gv1ib14d9qdju864gbp529249mm62ucq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "264007239616-lb2i3lp3aqpqpnfe5s515qaaorjofq0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cpssd.organizr",
+            "certificate_hash": "8ace3fb95d200a998f566cbd8de56ee565712207"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChjgEFr80yx8G7e3GVxxueNKcL82xYkFM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

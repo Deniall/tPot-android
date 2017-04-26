@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:elevation="4dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/lecture_time"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="10dp"
+        android:text="Date"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lecture_location"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.5dp"
+        android:layout_marginTop="50dp"
+        android:text="Location"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lecture_description"
+        style="@android:style/Widget.Holo.Light.TextView"
+        android:layout_width="157dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="95dp"
+        android:text="Title"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        android:textColor="@color/common_google_signin_btn_text_light_focused"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lecture_title"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="0dp"
+        android:text="Description"
+        android:textAppearance="@android:style/TextAppearance.Material.Display2"
+        android:textColor="@color/monsoon"
+        android:textColorLink="@color/oil"
+        android:textSize="40sp" />
+
+</FrameLayout>
